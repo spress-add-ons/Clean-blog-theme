@@ -1,0 +1,39 @@
+---
+layout: page
+description: "A Clean Blog Theme for Spress"
+---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ site.url }}{{ post.url }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date('F jS \\a\\t g:ia') }}</p>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ site.url }}/{%if paginator.previous_page > 1 %}page{{ paginator.previous_page }}/{% endif %}">
+            &larr; Newer Posts
+        </a>
+    </li>
+    {% endif %}
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ site.url }}/page{{ paginator.next_page }}/">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}

@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% block content %}
+
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.url }}/{{ page.header_img.url | default(site.header_img.url) }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{{ page.title | default(site.title) }}</h1>
+                    <hr class="small">
+                    <span class="subheading">{{ page.description }}</span>
+                    {% if page.header_img.author %}
+                    <br>
+                    <span class="meta">Photo by 
+                        {% if page.header_img.author_url %}
+                        <a href="{{ page.header_img.author_url }}">{{ page.header_img.author }}</a>
+                        {% else %}
+                        {{ page.header_img.author }}</span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			{{ page.content }}
+		</div>
+	</div>
+</div>
+
+<hr>
+
+{% endblock %}

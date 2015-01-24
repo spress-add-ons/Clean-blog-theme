@@ -1,0 +1,73 @@
+---
+layout: default
+---
+{% block content %}
+
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('{{ site.url }}/{{ page.header_img.url | default(site.header_img.url) }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Posted by {{ page.author }} on {{ now | date('F jS \\a\\t g:ia') }}</span>
+                    {% if page.header_img.author %}
+                    <br>
+                    <span class="meta">Photo by 
+                        {% if page.header_img.author_url %}
+                        <a href="{{ page.header_img.author_url }}">{{ page.header_img.author }}</a>
+                        {% else %}
+                        {{ page.header_img.author }}</span>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				{{ page.content }}
+
+                <hr>
+
+                {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments.enabled) %}
+                <section>
+                    <h3>Comments</h3>
+                    <div id="disqus_thread"></div>
+                    <noscript>
+                        Please enable JavaScript to view the
+                        <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                    </noscript> 
+                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </section>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+{% endblock %}
+{% block javascript %}
+    {% if (page.comments is defined and page.comments) or (page.comments is not defined and site.comments.enabled) %}
+        <script type="text/javascript">
+            var disqus_shortname = '{{ site.comments.disqus_shortname }}';
+            
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+    {% endif %}
+{% endblock %}
