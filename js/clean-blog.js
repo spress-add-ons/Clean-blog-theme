@@ -34,7 +34,7 @@ $(function() {
             }
             $.ajax({
                 dataType: "jsonp",
-                url: "{{ site.forms.contact.action_url }}",
+                url: "http://getsimpleform.com/messages/ajax?form_api_token={{ site.forms.contact.getsimpleform_api_token }}",
                 type: "POST",
                 data: {
                     name: name,

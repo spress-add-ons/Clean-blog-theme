@@ -21,7 +21,7 @@ social_networks:
 # Forms
 forms:
     contact:
-        action_url: "#"  # Your Getsimple form URL http://getsimpleform.com/messages/ajax?form_api_token=
+        getsimpleform_api_token:
 
 # Build settings
 paginate: 5

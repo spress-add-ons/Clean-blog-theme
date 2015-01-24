@@ -77,16 +77,15 @@ title: "About me"
 
 ### Contact form
 
-The contact form is a AJAX form. the URL for the action is configured in `config.yml`:
+The contact form is a AJAX form configured in `config.yml`:
 
 ```yaml
 forms:
     contact:
-        action_url: "http://your-url-action"
+        getsimpleform_api_token:
 ```
 
-If you don't have any backend for responsing to the action form, you can use
-[getsimpleform](https://getsimpleform.com/) service. It's free.
+You need a API key from [getsimpleform](https://getsimpleform.com/) service. It's free.
 
 ### Writing a post
 
