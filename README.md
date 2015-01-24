@@ -4,6 +4,13 @@ Clean blog theme is a ported theme to Spress design by [Start Bootstrap](http://
 
 [Live demo](http://spress-add-ons.github.io/clean-blog/).
 
+### Features
+
+* Fully responsive
+* Distraction free blog text optimized for legibility.
+* Working with [getsimpleform](https://getsimpleform.com/) contact form with validation.
+* Comments powered by [Disqus](disqus.com).
+
 ### How to install?
 
 #### Download a copy
