@@ -8,7 +8,7 @@ Clean blog theme is a ported theme to Spress design by [Start Bootstrap](http://
 
 * Get a copy of the latest [release](https://github.com/spress-add-ons/Clean-blog-theme/releases).
 * Uncompress it.
-* Go to `Directive-theme` folder
+* Go to `Clean-blog-theme` folder
 * `spress site:build --server --watch`
 
 #### With Git
