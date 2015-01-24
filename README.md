@@ -2,6 +2,8 @@
 
 Clean blog theme is a ported theme to Spress design by [Start Bootstrap](http://startbootstrap.com/).
 
+[Live demo](http://spress-add-ons.github.io/clean-blog/).
+
 ### How to install?
 
 #### Download a copy
