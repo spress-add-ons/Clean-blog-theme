@@ -35,7 +35,7 @@ Go to your [Spress](http://spress.yosymfony.com/) installation folder i.e  **~/S
 
 ```json
 "require": {
-    "spress-add-ons/Clean-blog-theme": "1.0.*@dev"
+    "spress-add-ons/clean-blog-theme": "1.0.*@dev"
 }
 ```
 
