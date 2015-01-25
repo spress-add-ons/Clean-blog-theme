@@ -2,8 +2,8 @@
     "name": "clean-blog-spress",
     "title": "Clean blog theme for Spress",
     "version": "1.0.0",
-    "homepage": "http://spress-add-ons.github.io/",
-    "author": "Spress add-ons",
+    "homepage": "http://yosymfony.com/",
+    "author": "Victor Puertas",
     "license": {
         "type": "Apache 2.0",
         "url": "http://www.apache.org/licenses/LICENSE-2.0"

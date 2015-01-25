@@ -1,14 +1,14 @@
 {
     "name": "spress-add-ons/clean-blog-theme",
     "type": "spress-theme",
-    "description": "Clean blog theme for Spress",
+    "description": "Clean blog theme for Spress design by Start Bootstrap",
     "keywords": ["bootstrap", "startbootstrap", "blog", "responsive", "template", "spress"],
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Spress add-ons",
+            "name": "Victor Puertas",
             "email": "vpgugr@gmail.com",
-            "homepage": "http://spress-add-ons.github.io/"
+            "homepage": "http://yosymfony.com"
         }
     ],
     "require": {
