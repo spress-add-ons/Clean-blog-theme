@@ -4,6 +4,8 @@ Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http:
 
 [Live demo](http://spress-add-ons.github.io/clean-blog/).
 
+This theme requires Spress >= 2.0.
+
 ### Features
 
 * Fully responsive.
@@ -20,38 +22,12 @@ Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http:
 * Go to `Clean-blog-theme` folder
 * `spress site:build --server --watch`
 
-#### With Git
+#### Git
 
 * [Fork this repository](https://github.com/spress-add-ons/Clean-blog-theme/fork)
 * Clone it: ` https://github.com/YOUR-USER/Clean-blog-theme.git
 * Go to `Clean-blog-theme` folder
 * `spress site:build --server --watch`
-
-#### Globally
-
-**This options is not available with `spress.phar`**.
-
-Go to your [Spress](http://spress.yosymfony.com/) installation folder i.e  **~/Spress** and add the following depencency to your `composer.json` file 
-
-```json
-"require": {
-    "spress-add-ons/clean-blog-theme": "1.0.*@dev"
-}
-```
-
-and then run the following command to install the dependency.
-
-```bash
-$ composer update
-```
-
-Next create your new site:
-
-```bash
-$ spress new:site /your-site-dir clean_blog
-$ cd /your-site-dir
-$ spress site:build --server --watch
-```
 
 ## Configuration
 
@@ -99,7 +75,7 @@ Each post has a header image. You can configure your image and some data about i
 
 ```yaml
 header_img:
-  url: "img/post-bg-07.jpg"
+  url: "assets/img/post-bg-07.jpg"
   author: Yuri Samoilov
   author_url: https://flic.kr/p/mjhDwB
 ```
