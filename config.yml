@@ -6,8 +6,8 @@ header_img:
   url: "assets/img/home-bg.jpg"
 
 comments:
-  enabled: true
-  disqus_shortname: yosymfony
+  enabled: false
+  disqus_shortname: ""
 
 social_networks:
     twitter: spress_cms # Your id without @
