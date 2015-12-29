@@ -45,7 +45,7 @@ comments:
 
 ### Top menu
 
-The top menu is composed by each of **pages with `title` attribute**. e.g: `about/index.html`:
+The top menu is composed by each of **pages with `title` attribute**. e.g: `about.md`:
 
 ```yaml
 title: "About me"
