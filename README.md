@@ -4,7 +4,7 @@ Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http:
 
 [Live demo](http://spress-add-ons.github.io/clean-blog/).
 
-This theme requires Spress >= 2.0.
+**This theme requires Spress >= 2.0**. If you are using Spress 1.x, go to [1.0.0](https://github.com/spress-add-ons/Clean-blog-theme/releases/tag/v1.0.0) version of the theme.
 
 ### Features
 
@@ -22,7 +22,7 @@ This theme requires Spress >= 2.0.
 * Go to `Clean-blog-theme` folder
 * `spress site:build --server --watch`
 
-#### Git
+#### Using Git
 
 * [Fork this repository](https://github.com/spress-add-ons/Clean-blog-theme/fork)
 * Clone it: ` https://github.com/YOUR-USER/Clean-blog-theme.git
