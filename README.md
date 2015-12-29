@@ -33,14 +33,14 @@ This theme requires Spress >= 2.0.
 
 ### Comments
 
-Comments are powered by [Disqus](disqus.com) and it need your 
-**disqus shortname**. To get it, you need create a account at this service.
+Comments are powered by [Disqus](disqus.com) and they need a 
+**disqus shortname**. To get it, you need to create a account at this service.
 It's free.
 
 ```yaml
 comments:
   enabled: true
-  disqus_shortname: yosymfony
+  disqus_shortname: your-shortname
 ```
 
 ### Top menu
