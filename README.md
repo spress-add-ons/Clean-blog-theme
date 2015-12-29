@@ -4,6 +4,8 @@ Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http:
 
 [Live demo](http://spress-add-ons.github.io/clean-blog/).
 
+**This theme requires Spress >= 2.0**. If you are using Spress 1.x, go to [1.0.0](https://github.com/spress-add-ons/Clean-blog-theme/releases/tag/v1.0.0) version of the theme.
+
 ### Features
 
 * Fully responsive.
@@ -18,58 +20,32 @@ Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http:
 * Get a copy of the latest [release](https://github.com/spress-add-ons/Clean-blog-theme/releases).
 * Uncompress it.
 * Go to `Clean-blog-theme` folder
-* `spress site:build --server --watch`
+* Run `spress site:build --server --watch`
 
-#### With Git
+#### Using Git
 
 * [Fork this repository](https://github.com/spress-add-ons/Clean-blog-theme/fork)
 * Clone it: ` https://github.com/YOUR-USER/Clean-blog-theme.git
 * Go to `Clean-blog-theme` folder
-* `spress site:build --server --watch`
-
-#### Globally
-
-**This options is not available with `spress.phar`**.
-
-Go to your [Spress](http://spress.yosymfony.com/) installation folder i.e  **~/Spress** and add the following depencency to your `composer.json` file 
-
-```json
-"require": {
-    "spress-add-ons/clean-blog-theme": "1.0.*@dev"
-}
-```
-
-and then run the following command to install the dependency.
-
-```bash
-$ composer update
-```
-
-Next create your new site:
-
-```bash
-$ spress new:site /your-site-dir clean_blog
-$ cd /your-site-dir
-$ spress site:build --server --watch
-```
+* Run `spress site:build --server --watch`
 
 ## Configuration
 
 ### Comments
 
-Comments are powered by [Disqus](disqus.com) and it need your 
-**disqus shortname**. To get it, you need create a account at this service.
+Comments are powered by [Disqus](disqus.com) and they need a 
+**disqus shortname**. To get it, you need to create an account at this service.
 It's free.
 
 ```yaml
 comments:
   enabled: true
-  disqus_shortname: yosymfony
+  disqus_shortname: "your-shortname"
 ```
 
 ### Top menu
 
-Top menu are composed by each of **pages with `title` attribute**. e.g: `about/index.html`:
+The top menu is composed by each of **pages with `title` attribute**. e.g: `./src/content/about.md`:
 
 ```yaml
 title: "About me"
@@ -89,7 +65,7 @@ You need a API key from [getsimpleform](https://getsimpleform.com/) service. It'
 
 ### Writing a post
 
-To create a new post use `new:post` command from Spress:
+To create a new post, runs `new:post` command from Spress:
 
 ```bash
 $> spress new:site
@@ -99,9 +75,9 @@ Each post has a header image. You can configure your image and some data about i
 
 ```yaml
 header_img:
-  url: "img/post-bg-07.jpg"
-  author: Yuri Samoilov
-  author_url: https://flic.kr/p/mjhDwB
+  url: "assets/img/post-bg-07.jpg"
+  author: "Yuri Samoilov"
+  author_url: "https://flic.kr/p/mjhDwB"
 ```
 
 ## License

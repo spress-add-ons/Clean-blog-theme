@@ -1,11 +1,11 @@
 ---
-layout:     post
-title:      "The dreams of yesterday are the hopes of today and the reality of tomorrow."
-date:       "2014-07-01 12:00:00"
+layout: post
+title:      "Dinosaurs are extinct today"
+subtitle:   "because they lacked opposable thumbs and the brainpower to build a space program."
+date:       "2014-06-10 12:00:00"
 author:     "Start Bootstrap"
-header_img: "img/post-bg-02.jpg"
 header_img:
-  url: "img/post-bg-02.jpg"
+  url: "assets/img/post-bg-01.jpg"
   author:
   author_url:
 ---
@@ -35,7 +35,7 @@ header_img:
 <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
 
 <a href="#">
-    <img src="{{ site.url }}/img/post-sample-image.jpg" alt="Post Sample Image">
+    <img src="{{ site.url }}/assets/img/post-sample-image.jpg" alt="Post Sample Image">
 </a>
 <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
 

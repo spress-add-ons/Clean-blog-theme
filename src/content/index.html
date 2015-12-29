@@ -1,0 +1,27 @@
+---
+layout: "page"
+description: "A Clean Blog Theme for Spress"
+
+generator: "pagination"
+provider: "site.posts"
+max_page: 5
+sort_by: "date"
+---
+{% for post in page.pagination.items %}
+<div class="post-preview">
+    <a href="{{ site.url }}{{ post.url }}">
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date('F jS \\a\\t g:ia') }}</p>
+</div>
+<hr>
+{% endfor %}
+
+{% include "paginator.html" %}

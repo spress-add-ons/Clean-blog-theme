@@ -5,7 +5,7 @@ subtitle:   "Syntax highlighting using Javascript"
 date:       "2015-01-23 20:00:00"
 author:     "Spress add-ons"
 header_img:
-  url: "img/post-bg-07.jpg"
+  url: "assets/img/post-bg-07.jpg"
   author: Yuri Samoilov
   author_url: https://flic.kr/p/mjhDwB
 ---
@@ -14,15 +14,15 @@ by [Highlight js](https://highlightjs.org) with support for over 100 languages. 
 code in PHP:
 
 ```
-use Yosymfony\Spress\Core\Application;
+use Yosymfony\Spress\Core\Spress;
 
 class MyClass
 {
     public function parseSite()
     {
-        $options = [];
-        $app = new Application($options);
-        $app->parse('/path-to-my-spress-site/');
+        $spress = new Spress();
+        $spress['spress.config.site_dir'] = '/path-to-your-spress-site';
+        $spress->parse();
     }
 }
 ```

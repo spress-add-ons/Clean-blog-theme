@@ -1,5 +1,4 @@
-_site/
+build/
+vendor/
 node_modules/
 composer.lock
-.DS_Store
-config_demo.yml

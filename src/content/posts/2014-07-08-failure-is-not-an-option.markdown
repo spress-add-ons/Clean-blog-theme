@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      "Science has not yet mastered prophecy"
-subtitle:   "We predict too much for the next year and yet far too little for the next ten."
-date:       "2014-08-24 12:00:00"
+title:      "Failure is not an option"
+subtitle:   "Many say exploration is part of our destiny, but it’s actually our duty to future generations."
+date:       "2014-07-08 12:00:00"
 author:     "Start Bootstrap"
 header_img:
-  url: "img/post-bg-04.jpg"
+  url: "assets/img/post-bg-03.jpg"
   author:
   author_url:
 ---
@@ -35,7 +35,7 @@ header_img:
 <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
 
 <a href="#">
-    <img src="{{ site.url }}/img/post-sample-image.jpg" alt="Post Sample Image">
+    <img src="{{ site.url }}/assets/img/post-sample-image.jpg" alt="Post Sample Image">
 </a>
 <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
 
