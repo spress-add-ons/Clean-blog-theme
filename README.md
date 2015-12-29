@@ -40,7 +40,7 @@ It's free.
 ```yaml
 comments:
   enabled: true
-  disqus_shortname: your-shortname
+  disqus_shortname: "your-shortname"
 ```
 
 ### Top menu
@@ -76,8 +76,8 @@ Each post has a header image. You can configure your image and some data about i
 ```yaml
 header_img:
   url: "assets/img/post-bg-07.jpg"
-  author: Yuri Samoilov
-  author_url: https://flic.kr/p/mjhDwB
+  author: "Yuri Samoilov"
+  author_url: "https://flic.kr/p/mjhDwB"
 ```
 
 ## License
