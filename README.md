@@ -20,14 +20,14 @@ Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http:
 * Get a copy of the latest [release](https://github.com/spress-add-ons/Clean-blog-theme/releases).
 * Uncompress it.
 * Go to `Clean-blog-theme` folder
-* `spress site:build --server --watch`
+* Run `spress site:build --server --watch`
 
 #### Using Git
 
 * [Fork this repository](https://github.com/spress-add-ons/Clean-blog-theme/fork)
 * Clone it: ` https://github.com/YOUR-USER/Clean-blog-theme.git
 * Go to `Clean-blog-theme` folder
-* `spress site:build --server --watch`
+* Run `spress site:build --server --watch`
 
 ## Configuration
 
