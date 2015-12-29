@@ -1,5 +1,5 @@
 # Site settings
-title: Clean Blog
+title: "Clean Blog"
 
 # Default header image
 header_img:
@@ -10,10 +10,10 @@ comments:
   disqus_shortname: ""
 
 social_networks:
-    twitter: spress_cms # Your id without @
+    twitter: "spress_cms" # Your id without @
     facebook:  # Your URL
     instagram: # Your id
-    github: https://github.com/spress/Spress
+    github: "https://github.com/spress/Spress"
     dribbble: # Your id
     linkedin: # Your URL
     email: # Your email adress you@yoourDomain.com
@@ -21,4 +21,4 @@ social_networks:
 # Forms
 forms:
     contact:
-        getsimpleform_api_token:
+        getsimpleform_api_token: 
