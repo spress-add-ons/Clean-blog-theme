@@ -45,7 +45,7 @@ comments:
 
 ### Top menu
 
-Top menu are composed by each of **pages with `title` attribute**. e.g: `about/index.html`:
+The top menu is composed by each of **pages with `title` attribute**. e.g: `about/index.html`:
 
 ```yaml
 title: "About me"
@@ -65,7 +65,7 @@ You need a API key from [getsimpleform](https://getsimpleform.com/) service. It'
 
 ### Writing a post
 
-To create a new post use `new:post` command from Spress:
+To create a new post, runs `new:post` command from Spress:
 
 ```bash
 $> spress new:site
