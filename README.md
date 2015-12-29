@@ -34,7 +34,7 @@ This theme requires Spress >= 2.0.
 ### Comments
 
 Comments are powered by [Disqus](disqus.com) and they need a 
-**disqus shortname**. To get it, you need to create a account at this service.
+**disqus shortname**. To get it, you need to create an account at this service.
 It's free.
 
 ```yaml
