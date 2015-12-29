@@ -14,15 +14,15 @@ by [Highlight js](https://highlightjs.org) with support for over 100 languages. 
 code in PHP:
 
 ```
-use Yosymfony\Spress\Core\Application;
+use Yosymfony\Spress\Core\Spress;
 
 class MyClass
 {
     public function parseSite()
     {
-        $options = [];
-        $app = new Application($options);
-        $app->parse('/path-to-my-spress-site/');
+        $spress = new Spress();
+        $spress['spress.config.site_dir'] = '/path-to-your-spress-site';
+        $spress->parse();
     }
 }
 ```

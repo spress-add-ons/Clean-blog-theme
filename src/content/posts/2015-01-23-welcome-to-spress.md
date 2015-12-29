@@ -9,10 +9,22 @@ header_img:
   author: Yuri Samoilov
   author_url: https://flic.kr/p/mjhDwB
 ---
-To create a new post, simply run `spress new:post` command or adds a file
+To create a new post, simply runs `spress new:post` command or adds a file
 in the `./src/content/posts` folder that follows the convention `YYYY-MM-DD-name-of-post.md`.
 
-More information about Spress:
+## Comments
+
+Comments are powered by [Disqus](disqus.com) and they need a 
+**disqus shortname**. To get it, you need to create an account at this service and
+next edit the `config.yml` filename:
+
+```yaml
+comments:
+  enabled: true
+  disqus_shortname: "your-shortname"
+```
+
+## About Spress:
 
 * [Spress](http://spress.yosymfony.com)
 * [Github](http://github.com/spress)
