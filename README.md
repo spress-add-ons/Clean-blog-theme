@@ -4,16 +4,16 @@ Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http:
 
 [Live demo](http://spress-add-ons.github.io/clean-blog/).
 
-**This theme requires Spress >= 2.2**. If you are using Spress 1.x, go to [1.0.0](https://github.com/spress-add-ons/Clean-blog-theme/releases/tag/v1.0.0) version of the theme.
-
 ![Spresso theme preview](/screenshot.png)
 
 ### Features
 
 * Fully responsive.
 * Distraction free blog text optimized for legibility.
+* Support for tags and categories in posts.
 * Contact form powered by [getsimpleform](https://getsimpleform.com/).
 * Comments powered by [Disqus](https://disqus.com).
+* Code highlighted thanks to [highlight.js](https://highlightjs.org/).
 
 ## Installation
 You can create a [site based on Clean blog](#creating-a-new-site-based-on-this-theme-creating-site)
@@ -24,7 +24,7 @@ or install this one as a theme of a [pre-existing site](#install-as-a-theme-of-p
 
 ### Creating a new site based on this theme
 
-Performs the following command and Spresso theme will be
+Performs the following command and clean-blog theme will be
 installed in `mysite` folder:
 
 ```bash
@@ -38,6 +38,7 @@ Go to your site folder and performs the following command:
 ```bash
 $ spress add:plugin spress-add-ons/clean-blog-theme
 ```
+
 And add this line to the `config.yml` file of your site:
 
 ```yaml
@@ -69,7 +70,8 @@ comments:
 
 ### Top menu
 
-The top menu is composed by each of **pages with `title` attribute**. e.g: `./src/content/about.md`:
+The top menu is composed by each of **pages with `title` attribute**.
+e.g: `./src/content/about.md`:
 
 ```yaml
 title: "About me"
@@ -104,6 +106,17 @@ header_img:
   author_url: "https://flic.kr/p/mjhDwB"
 ```
 
+#### Thumbnail images
+
+The `index.html` page can display a thumbnail image for each post. This kind
+of images must be located at `./src/content/assets/img` folder and the image
+may has the dimentions `100x100 px`.
+
+At the `thumb_img` key of each post you set the name of the image file: 
+
+```yaml
+thumb_img: spress.png
+```
 
 ## License
 
