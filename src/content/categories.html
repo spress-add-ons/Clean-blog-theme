@@ -1,0 +1,29 @@
+---
+layout: "collection"
+generator: "taxonomy"
+max_page: 10
+taxonomy_attribute: "categories"
+permalink: "/categories/:name"
+sort_by: "date"
+---
+{% for post in page.pagination.items %}
+<div class="post-preview">
+    <a href="{{ site.url }}{{ post.url }}">
+        {% if post.thumb_img %}
+        <div class="post-thumbnail" style="background-image:url('{{ site.url }}/assets/img/{{ post.thumb_img }}');"></div>
+        {% endif %}
+        <h2 class="post-title">
+            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {{ post.author }} on {{ post.date | date('F jS, Y') }}</p>
+</div>
+<hr>
+{% endfor %}
+
+{% include "paginator.html" with { 'previous_text' : 'Prior', 'next_text' : 'Next' } %}
