@@ -54,6 +54,28 @@ You can get the latest version of Clean blog theme with just run the following c
 $ spress update:plugin
 ```
 
+## Contents
+### Layouts
+
+Refers to files within the `./src/layouts` directory, that define the architecture
+of the content.
+
+* `default.html`: The base layout. The derived layouts inject their contents
+into this file at the line that says `{{ page.content }}`.
+* `page.html`: Layout for pages.
+* `post.html`: Layout for posts. They are located at `./src/content/posts`.
+* `collection.html`: Layout used by collection pages: `categories.html` and `tags.html`.
+
+### Includes
+
+Refers to snippets of code within the `./src/includes` directory. These ones can
+be inserted in layouts and pages.
+
+* `head.html`
+* `footer.html`
+* `nav.html`
+* `paginator.html`
+
 ## Configuration
 
 ### Comments
