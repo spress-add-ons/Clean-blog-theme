@@ -31,7 +31,7 @@ installed in `mysite` folder:
 $ spress new:site mysite spress-add-ons/clean-blog-theme
 ```
 
-### Install as a theme of an pre-existing site
+### Install as a theme of a pre-existing site
 
 Go to your site folder and performs the following command:
 
@@ -43,7 +43,7 @@ And add this line to the `config.yml` file of your site:
 
 ```yaml
 themes:
-    name: spress-add-ons/clean-blog-theme
+    name: "spress-add-ons/clean-blog-theme"
 ```
 
 ### How to update?
@@ -112,7 +112,7 @@ The `index.html` page can display a thumbnail image for each post. This kind
 of images must be located at `./src/content/assets/img` folder and the image
 may has the dimentions `100x100 px`.
 
-At the `thumb_img` key of each post you set the name of the image file: 
+At the `thumb_img` key of each post you set the name of the image file:
 
 ```yaml
 thumb_img: spress.png
