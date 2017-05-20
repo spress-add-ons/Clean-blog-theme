@@ -1,39 +1,63 @@
-## Clean blog theme - Spress version
+## Clean blog theme
 
 Clean blog theme is a ported theme to Spress designed by [Start Bootstrap](http://startbootstrap.com/).
 
 [Live demo](http://spress-add-ons.github.io/clean-blog/).
 
-**This theme requires Spress >= 2.0**. If you are using Spress 1.x, go to [1.0.0](https://github.com/spress-add-ons/Clean-blog-theme/releases/tag/v1.0.0) version of the theme.
+**This theme requires Spress >= 2.2**. If you are using Spress 1.x, go to [1.0.0](https://github.com/spress-add-ons/Clean-blog-theme/releases/tag/v1.0.0) version of the theme.
+
+![Spresso theme preview](/screenshot.png)
 
 ### Features
 
 * Fully responsive.
 * Distraction free blog text optimized for legibility.
 * Contact form powered by [getsimpleform](https://getsimpleform.com/).
-* Comments powered by [Disqus](disqus.com).
+* Comments powered by [Disqus](https://disqus.com).
 
-### How to install?
+## Installation
+You can create a [site based on Clean blog](#creating-a-new-site-based-on-this-theme-creating-site)
+or install this one as a theme of a [pre-existing site](#install-as-a-theme-of-pre-existing-site-pre-existing).
 
-#### Download a copy
+**Requirements:**
+* Spress >= 2.2.0
 
-* Get a copy of the latest [release](https://github.com/spress-add-ons/Clean-blog-theme/releases).
-* Uncompress it.
-* Go to `Clean-blog-theme` folder
-* Run `spress site:build --server --watch`
+### Creating a new site based on this theme
 
-#### Using Git
+Performs the following command and Spresso theme will be
+installed in `mysite` folder:
 
-* [Fork this repository](https://github.com/spress-add-ons/Clean-blog-theme/fork)
-* Clone it: ` https://github.com/YOUR-USER/Clean-blog-theme.git
-* Go to `Clean-blog-theme` folder
-* Run `spress site:build --server --watch`
+```bash
+$ spress new:site mysite spress-add-ons/clean-blog-theme
+```
+
+### Install as a theme of an pre-existing site
+
+Go to your site folder and performs the following command:
+
+```bash
+$ spress add:plugin spress-add-ons/clean-blog-theme
+```
+And add this line to the `config.yml` file of your site:
+
+```yaml
+themes:
+    name: spress-add-ons/clean-blog-theme
+```
+
+### How to update?
+
+You can get the latest version of Clean blog theme with just run the following command:
+
+```bash
+$ spress update:plugin
+```
 
 ## Configuration
 
 ### Comments
 
-Comments are powered by [Disqus](disqus.com) and they need a 
+Comments are powered by [Disqus](disqus.com) and they need a
 **disqus shortname**. To get it, you need to create an account at this service.
 It's free.
 
@@ -68,10 +92,10 @@ You need a API key from [getsimpleform](https://getsimpleform.com/) service. It'
 To create a new post, runs `new:post` command from Spress:
 
 ```bash
-$> spress new:site
+$ spress new:post
 ```
 
-Each post has a header image. You can configure your image and some data about it.
+Each post could has a header and thumbnail image. You can configure your image and some data about it.
 
 ```yaml
 header_img:
@@ -79,6 +103,7 @@ header_img:
   author: "Yuri Samoilov"
   author_url: "https://flic.kr/p/mjhDwB"
 ```
+
 
 ## License
 

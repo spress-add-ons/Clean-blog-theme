@@ -10,6 +10,9 @@ sort_by: "date"
 {% for post in page.pagination.items %}
 <div class="post-preview">
     <a href="{{ site.url }}{{ post.url }}">
+        {% if post.thumb_img %}
+        <div class="post-thumbnail" style="background-image:url('{{ site.url }}/assets/img/{{ post.thumb_img }}');"></div>
+        {% endif %}
         <h2 class="post-title">
             {{ post.title }}
         </h2>

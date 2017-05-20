@@ -8,13 +8,18 @@ header_img:
   url: "assets/img/post-bg-07.jpg"
   author: Yuri Samoilov
   author_url: https://flic.kr/p/mjhDwB
+thumb_img: spress.png
+tags:
+  - spress
+categories:
+  - news
 ---
 To create a new post, simply runs `spress new:post` command or adds a file
 in the `./src/content/posts` folder that follows the convention `YYYY-MM-DD-name-of-post.md`.
 
 ## Comments
 
-Comments are powered by [Disqus](disqus.com) and they need a 
+Comments are powered by [Disqus](https://disqus.com) and they need a
 **disqus shortname**. To get it, you need to create an account at this service and
 next edit the `config.yml` filename:
 

@@ -12,12 +12,11 @@
         }
     ],
     "require": {
-        "spress/spress-installer": "2.0.*"
+        "spress/spress-installer": "~2.1"
     },
     "extra": {
-        "spress_name": "clean_blog",
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "2.1.x-dev"
         }
     }
 }
