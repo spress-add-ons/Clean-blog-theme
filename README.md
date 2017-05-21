@@ -31,7 +31,7 @@ installed in `mysite` folder:
 $ spress new:site mysite spress-add-ons/clean-blog-theme
 ```
 
-### Install as a theme of a pre-existing site
+### Install as a theme
 
 Go to your site folder and performs the following command:
 
@@ -71,10 +71,10 @@ into this file at the line that says `{{ page.content }}`.
 Refers to snippets of code within the `./src/includes` directory. These ones can
 be inserted in layouts and pages.
 
-* `head.html`
-* `footer.html`
-* `nav.html`
-* `paginator.html`
+* `head.html`: Defines the content of `<head></head>` in default layout.
+* `footer.html`: Defines the default footer section.
+* `nav.html`: Defines de top-menu based on pages with title.
+* `paginator.html`: Defines the pagination of the content.
 
 ## Configuration
 
@@ -119,7 +119,8 @@ To create a new post, runs `new:post` command from Spress:
 $ spress new:post
 ```
 
-Each post could has a header and thumbnail image. You can configure your image and some data about it.
+Each post could has a header and thumbnail image. You can configure your image
+and some data about it:
 
 ```yaml
 header_img:
@@ -134,7 +135,7 @@ The `index.html` page can display a thumbnail image for each post. This kind
 of images must be located at `./src/content/assets/img` folder and the image
 may has the dimentions `100x100 px`.
 
-At the `thumb_img` key of each post you set the name of the image file:
+At the `thumb_img` key you can set the name of the image file like this:
 
 ```yaml
 thumb_img: spress.png
@@ -142,4 +143,5 @@ thumb_img: spress.png
 
 ## License
 
+The theme is available as open source under the terms of the
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0).
